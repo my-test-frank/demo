@@ -2,4 +2,6 @@
 - hosts: all
   tasks:
     - service: state=stopped name=demo
+      become: true
     - service: state=started name=demo
+      become: true
