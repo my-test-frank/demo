@@ -1,7 +1,5 @@
 ---
 - hosts: all
   tasks:
-    - name: Stop Demo
-      systemd: state=stopped name=demo
-    - name: Start Demo
-      systemd: state=started name=demo
+    - systemd: state=stopped name=demo
+    - systemd: state=started name=demo
